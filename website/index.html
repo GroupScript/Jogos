@@ -1,0 +1,99 @@
+<html>
+<head>
+	<title>In&#237;cio</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/slidorion.css" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.slidorion.min.js"></script>
+		<script src="js/script.js"></script>
+</head>
+<body>
+	<div id="corpo">
+		<div id="div_botao"> <!--Botões principais-->
+			<a href="index.html"><button class="botao">In&#237;cio</button></a>
+			<a href="Jogos.html"><button class="botao">Jogos</button></a>
+			<a href="Contato.html"><button class="botao">Contato</button></a>
+			<a href="Cadastro.html"><button class="botao">Cadastro</button></a>
+		</div>
+
+			<div id="slidorion"><!--Plugin Slidorion-->
+				<div id="slider">
+					<div class="slide"><img src="imagens/slide1.jpg"></div>
+					<div class="slide"><img src="imagens/slide2.jpg"></div>
+					<div class="slide"><img src="imagens/slide3.jpg"></div>
+				</div>
+			
+				<div id="accordion">
+					<div class="link-header">The Legend of Zelda</div>
+					<div class="link-content">
+						<p>
+							The Legend of Zelda &#233; um jogo eletr&#244;nico criado por Shigeru Miyamoto em 1986 para o NES. Situado na terra da fantasia de Hyrule, os centros da trama, um garoto chamado Link, o protagonista jog&#225;vel, que visa a resgatar a Princesa Zelda do antagonista prim&#225;rio, Ganon, recolhendo os oito fragmentos da Triforce da Sabedoria, um poderoso artefato. Publicado pela Nintendo, o jogo rendeu v&#225;rias vers&#245;es para diversos consoles da empresa, sendo uma delas a continua&#231;&#227;o direta do jogo original. O t&#237;tulo foi inclu&#237;do no pacote de 20 jogos do programa de "embaixadores" do Nintendo 3DS, que permitiu &#224;queles que tinham comprado o port&#225;til antes do corte do pre&#231;o baixarem o jogo gratuitamente.
+						</p>
+					</div>
+					<div class="link-header">Castlevania</div>
+					<div class="link-content">
+						<p>
+							Castlevania &#233; uma s&#233;rie de videogame, criada e desenvolvida pela Konami. A s&#233;rie foi criada no Jap&#227;o e seu t&#237;tulo de debuto foi lan&#231;ado em 26 de setembro de 1986 para o Famicom Disk System, intitulado Akumajo Dracula, seguido por um remake para a plataforma MSX2 em 30 de outubro de 1986. Apesar da conversão para MSX2 (de título Vampire Killer na Europa e no Brasil) ter sido lançado primeiro fora do Jap&#227;o, a s&#233;rie n&#227;o recebeu grande aten&#231;&#227;o fora do pa&#237;s at&#233; que a vers&#227;o para Famicom Disk System ter sido convertida para o formato de cartucho para o Nintendo Entertainment System e internacionalizada para lan&#231;amentos de Castlevania na Am&#233;rica do Norte e na Europa em 1987. Logo em seguida, a s&#233;rie se tornou um ponto de refer&#234;ncia na cria&#231;&#227;o de jogos de plataforma e a&#231;&#227;o.
+						</p>
+					</div>
+					<div class="link-header">Final Fantasy</div>
+					<div class="link-content">
+						<p>
+							Final Fantasy &#233; um jogo RPG desenvolvido e lan&#231;ado pela Square (atual Square Enix) em 1987, e lan&#231;ado na Am&#233;rica do Norte pela Nintendo em 1990. Foi o primeiro jogo da s&#233;rie Final Fantasy. Originalmente lançado para a Nintendo Entertainment System, recebeu conversões para diversas plataformas, algumas vezes junto com o sucessor Final Fantasy II.
+						</p>
+						<p>
+							A hist&#243;ria do jogo segue quatro jovens chamados "The Light Warriors" ("Guerreiros da Luz"), que obt&#234;m quatro orbes elementares, que perderam o poder devido a quatro monstros, os Fiends of Chaos (Dem&#244;nios do Caos). Na sua jornada, os guerreiros enfrentam estes monstros para restaurar o poder dos cristais e assim salvar o mundo. Final Fantasy foi bem-sucedido comercialmente e, junto com Dragon Warrior, influenciou todos os RPGs para consola que o sucederam.
+						</p>	
+					</div>
+				</div>
+			</div>
+
+		<div id="footer"><!--Rodapé-->
+		<footer>		
+			<address>
+				Copyright &#169; 2013 Jogos
+			<br>
+				Design by Komurin.info
+			</address>
+		</footer>
+		</div>
+	</div>
+
+	<div>
+		<button id="entrar">Login</button><!--Botão de login-->
+	</div>
+
+	<div id="user"><!--Formulário com campos usuário e senha-->		
+		<form onsubmit="return verificar_login()">
+			<table>
+				<tr>
+					<td><input id="nome" type="text" placeholder="Usu&#225;rio" size="18" required/></td>
+				</tr>
+				<tr>
+					<td><input id="senha" type="password" placeholder="Senha" size="18" required/></td>
+				</tr>
+				<tr>
+					<td><input id="enviar" value="Entrar" type="submit"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<script>
+		$(function(){
+			$('#slidorion').slidorion({
+				speed: 1000,
+				interval: 4000,
+				hoverPause: true,
+				effect: 'slideRandom'
+			});
+		});
+		//Efeito de aparecimento e desaparecimento do formulário de login
+		$(function(){
+			$("#entrar").click(function(){
+				$("#user").slideToggle("slow");
+			});
+		});
+	</script>
+</body>
+</html>

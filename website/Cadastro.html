@@ -1,0 +1,53 @@
+<html> 
+<head>
+	<title>Cadastro</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<script src="js/script.js"></script>
+</head> 
+<body>
+	<div id="corpo">
+		<div id="div_botao"><!--Botões principais-->
+			<a href="index.html"><button class="botao">In&#237;cio</button></a>
+			<a href="Jogos.html"><button class="botao">Jogos</button></a>
+			<a href="Contato.html"><button class="botao">Contato</button></a>
+			<a href="Cadastro.html"><button class="botao">Cadastro</button></a>
+		</div>
+		<div>
+			<form onsubmit="return verificar_cadastro()"><!--Formulário de cadastro-->
+				<table>
+					<tr>
+						<td><input id="nome" type="text" placeholder="Nome" onkeyup="validar('nome')" required/></td>
+						<td width="35px" id="valid_nome"></td>
+						<td><input id="sobrenome" type="text" placeholder="Sobrenome" onkeyup="validar('sobrenome')" required/></td>
+						<td width="35px" id="valid_snome"></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input id="email" type="text" placeholder="E-mail" onkeyup="validar('email')" size="53" required/></td>
+						<td width="35px" id="valid_email"></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input id="senha" type="password" placeholder="Senha" onkeyup="validar('senha')" size="53" required/></td>
+						<td width="35px" id="valid_senha"></td>
+					</tr>
+					<tr>
+						<td colspan="3"><input id="senha2" type="password" placeholder="Confirmar Senha" onkeyup="validar('senha2')" size="53" required/></td>
+						<td width="35px" id="valid_senha2"></td>
+					</tr>
+					<tr>
+						<td><input id="enviar" type="submit"></td>
+					</tr>			
+				</table>
+			</form>
+		</div>
+		<div id="footer"><!--Rodapé-->
+			<footer>		
+				<address>
+					Copyright &#169; 2013 Jogos
+				<br>
+					Design by Komurin.info
+				</address>
+			</footer>
+		</div>
+	</div>
+</body> 
+</html>

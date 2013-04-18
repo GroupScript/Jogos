@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Jogos</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/adipoli.css">
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.adipoli.min.js"></script>	
+		<script src="js/script.js"></script>
+</head>
+<body>
+	<div id="corpo">
+		<div id="div_botao"><!--Botões principais-->
+			<a href="index.html"><button class="botao">In&#237;cio</button></a>
+			<a href="Jogos.html"><button class="botao">Jogos</button></a>
+			<a href="Contato.html"><button class="botao">Contato</button></a>
+			<a href="Cadastro.html"><button class="botao">Cadastro</button></a>
+		</div>
+		<div><!--Imagens dos jogos-->
+			<table>
+				<tr><td class="cellJogo"><img class="image1" src="imagens/jogo1.jpg" /></td>
+					<td class="cellJogo"><img class="image1" src="imagens/jogo2.jpg" /></td>
+					<td class="cellJogo"><img class="image1" src="imagens/jogo3.jpg" /></td>
+				</tr>
+				<tr>
+					<td class="cellJogo"><img class="image1" src="imagens/jogo4.jpg" /></td>
+					<td class="cellJogo"><img class="image1" src="imagens/jogo5.jpg" /></td>
+					<td class="cellJogo"><img class="image1" src="imagens/jogo6.jpg" /></td>
+				</tr>	
+			</table>
+		</div>
+		<div id="footer"><!--Rodapé-->
+			<footer>		
+				<address>
+					Copyright &#169; 2013 Jogos
+				<br>
+					Design by Komurin.info
+				</address>
+			</footer>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('.image1').adipoli({
+			    'startEffect' : 'normal',
+    			'hoverEffect' : 'popout'
+			});
+		});
+	</script>
+</body>
+</html>

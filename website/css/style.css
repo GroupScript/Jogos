@@ -1,0 +1,72 @@
+body{
+	background-image: url('../imagens/pacman.jpg');
+	background-color: black;	
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100%;
+	font-family: arial;			
+	}
+
+table{
+	margin: auto;
+	}
+
+#corpo{
+	width: 60%;
+	margin: auto;
+	}
+
+#nome, #sobrenome, #email, #senha, #senha2, #ddd, #telefone, #mensagem, #enviar{
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 20px;
+	}
+
+#div_botao{
+	padding-top: 30px;
+	padding-bottom: 30px; 
+	text-align: center;
+	}
+
+.botao{
+	padding-right: 33px;
+	padding-left: 33px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 30px;
+	border-radius: 5px;
+	}
+	
+#entrar{
+	position: absolute;
+	top: 140;
+	left: 45;
+	padding-right: 33px;
+	padding-left: 33px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 30px;
+	border-radius: 5px;
+	}
+
+#user{
+	position: absolute;
+	top: 220;
+	left: 0;
+	display: none;
+	border-radius: 5px;
+	font-size: 20px;
+	}
+
+.cellJogo{
+	padding: 10px;
+	}
+
+#footer{
+	text-align: center;
+	color: white;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	}
